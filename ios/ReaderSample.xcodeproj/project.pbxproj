@@ -18,6 +18,8 @@
 		2D244D179776B48CDF23E595 /* libPods-ReaderSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEEDE5FA34D634146203E2E /* libPods-ReaderSample.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReaderSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReaderSampleTests.m */; };
 		CAF4FFA3E1F8702BA995B4E9 /* libPods-ReaderSample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C501ACA7D130F765948D48AC /* libPods-ReaderSample-tvOSTests.a */; };
+		D161E7792469BA0300FF5327 /* ReaderManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D161E7762469BA0300FF5327 /* ReaderManagerBridge.m */; };
+		D161E77A2469BA0300FF5327 /* ReaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161E7782469BA0300FF5327 /* ReaderManager.swift */; };
 		EA776ADD11FD42D7901EA5B9 /* libPods-ReaderSample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14AD5F03A7D189E81299AF /* libPods-ReaderSample-tvOS.a */; };
 		F59115FF3223095C5AA69541 /* libPods-ReaderSample-ReaderSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E83F0445EA111DECEEFA944 /* libPods-ReaderSample-ReaderSampleTests.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,9 @@
 		BAE36094F8A2959B3D740D35 /* Pods-ReaderSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderSample.debug.xcconfig"; path = "Target Support Files/Pods-ReaderSample/Pods-ReaderSample.debug.xcconfig"; sourceTree = "<group>"; };
 		C437996B73C38ACB432806EC /* Pods-ReaderSample-ReaderSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderSample-ReaderSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReaderSample-ReaderSampleTests/Pods-ReaderSample-ReaderSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C501ACA7D130F765948D48AC /* libPods-ReaderSample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReaderSample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D161E7752469BA0200FF5327 /* ReaderSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReaderSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		D161E7762469BA0300FF5327 /* ReaderManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderManagerBridge.m; path = ReaderSample/ReaderManagerBridge.m; sourceTree = "<group>"; };
+		D161E7782469BA0300FF5327 /* ReaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReaderManager.swift; path = ReaderSample/ReaderManager.swift; sourceTree = "<group>"; };
 		D26E3B5D091AD6E41382413C /* Pods-ReaderSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReaderSample-tvOSTests/Pods-ReaderSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,6 +130,8 @@
 		13B07FAE1A68108700A75B9A /* ReaderSample */ = {
 			isa = PBXGroup;
 			children = (
+				D161E7782469BA0300FF5327 /* ReaderManager.swift */,
+				D161E7762469BA0300FF5327 /* ReaderManagerBridge.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -132,6 +139,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D161E7752469BA0200FF5327 /* ReaderSample-Bridging-Header.h */,
 			);
 			name = ReaderSample;
 			sourceTree = "<group>";
@@ -194,7 +202,6 @@
 				EFA1517A186AA5CEE42DE88A /* Pods-ReaderSample-tvOSTests.debug.xcconfig */,
 				D26E3B5D091AD6E41382413C /* Pods-ReaderSample-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +216,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				219CF678F83FF8E9A7F6E752 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +238,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0B4659220EFBFB1B0021991D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,7 +301,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1140;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -374,6 +383,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		0B4659220EFBFB1B0021991D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReaderSample/Pods-ReaderSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		219CF678F83FF8E9A7F6E752 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReaderSample-ReaderSampleTests/Pods-ReaderSample-ReaderSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -530,7 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D161E77A2469BA0300FF5327 /* ReaderManager.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D161E7792469BA0300FF5327 /* ReaderManagerBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C437996B73C38ACB432806EC /* Pods-ReaderSample-ReaderSampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6AF30AC0C06B05A97891B19 /* Pods-ReaderSample-ReaderSampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReaderSampleTests/Info.plist;
@@ -644,6 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReaderSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReaderSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -666,6 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReaderSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReaderSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

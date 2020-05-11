@@ -1,4 +1,5 @@
 platform :ios, '9.0'
+install! 'cocoapods', :disable_input_output_paths => true
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 def add_flipper_pods!(versions = {})
@@ -76,6 +77,13 @@ target 'ReaderSample' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  # FolioReaderKit
+  pod 'FolioReaderKit', :modular_headers => true
+  pod 'SSZipArchive', :modular_headers => true
+  pod 'ZFDragableModalTransition', :modular_headers => true
+  pod 'RealmSwift', :modular_headers => true
+  pod 'Realm', :modular_headers => true
 
   target 'ReaderSampleTests' do
     inherit! :complete

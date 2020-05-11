@@ -15,13 +15,23 @@ import {
   Text,
   Button,
   StatusBar,
+  NativeModules,
 } from 'react-native';
+
+const ReaderManager = NativeModules.ReaderManager;
 
 const App = () => {
   const buttonProps = {
     title: 'Open Native',
     onPress: () => {
-      console.log('TBD');
+      console.log('Native');
+      const callback = (err, obj) => {
+        if (err) {
+          throw err;
+        }
+        console.log(obj);
+      };
+      ReaderManager.addEvent('Sample Event', 'Sample Value', callback);
     },
   };
 
