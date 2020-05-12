@@ -79,11 +79,11 @@ target 'ReaderSample' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # FolioReaderKit
-  pod 'FolioReaderKit', :modular_headers => true
+  pod 'FolioReaderKit', git: 'https://github.com/FolioReader/FolioReaderKit.git', :modular_headers => true
   pod 'SSZipArchive', :modular_headers => true
   pod 'ZFDragableModalTransition', :modular_headers => true
-  pod 'RealmSwift', :modular_headers => true
-  pod 'Realm', :modular_headers => true
+  pod 'RealmSwift', '3.17.3', :modular_headers => true
+  pod 'Realm', '3.17.3', :modular_headers => true
 
   target 'ReaderSampleTests' do
     inherit! :complete

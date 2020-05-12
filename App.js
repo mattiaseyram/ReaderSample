@@ -21,7 +21,7 @@ import {
 const ReaderManager = NativeModules.ReaderManager;
 
 const App = () => {
-  const buttonProps = {
+  const sampleButtonProps = {
     title: 'Open Native',
     onPress: () => {
       console.log('Native');
@@ -35,6 +35,14 @@ const App = () => {
     },
   };
 
+  const readerButtonProps = {
+    title: 'Open Reader',
+    onPress: () => {
+      console.log('Reader');
+      ReaderManager.open();
+    },
+  };
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -43,7 +51,8 @@ const App = () => {
           <View>
             <Text style={styles.center}>Sample Reader</Text>
           </View>
-          <Button {...buttonProps} />
+          <Button {...sampleButtonProps} />
+          <Button {...readerButtonProps} />
         </ScrollView>
       </SafeAreaView>
     </>

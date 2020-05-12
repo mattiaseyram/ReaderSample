@@ -20,6 +20,7 @@
 		CAF4FFA3E1F8702BA995B4E9 /* libPods-ReaderSample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C501ACA7D130F765948D48AC /* libPods-ReaderSample-tvOSTests.a */; };
 		D161E7792469BA0300FF5327 /* ReaderManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D161E7762469BA0300FF5327 /* ReaderManagerBridge.m */; };
 		D161E77A2469BA0300FF5327 /* ReaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161E7782469BA0300FF5327 /* ReaderManager.swift */; };
+		D1F5D2A8246A291E000A115F /* alice.epub in Resources */ = {isa = PBXBuildFile; fileRef = D1F5D2A7246A291E000A115F /* alice.epub */; };
 		EA776ADD11FD42D7901EA5B9 /* libPods-ReaderSample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14AD5F03A7D189E81299AF /* libPods-ReaderSample-tvOS.a */; };
 		F59115FF3223095C5AA69541 /* libPods-ReaderSample-ReaderSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E83F0445EA111DECEEFA944 /* libPods-ReaderSample-ReaderSampleTests.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		D161E7752469BA0200FF5327 /* ReaderSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReaderSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		D161E7762469BA0300FF5327 /* ReaderManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderManagerBridge.m; path = ReaderSample/ReaderManagerBridge.m; sourceTree = "<group>"; };
 		D161E7782469BA0300FF5327 /* ReaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReaderManager.swift; path = ReaderSample/ReaderManager.swift; sourceTree = "<group>"; };
+		D1F5D2A7246A291E000A115F /* alice.epub */ = {isa = PBXFileReference; lastKnownFileType = file; name = alice.epub; path = ../../bookclub/App/Reader/src/samples/alice.epub; sourceTree = "<group>"; };
 		D26E3B5D091AD6E41382413C /* Pods-ReaderSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReaderSample-tvOSTests/Pods-ReaderSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -134,6 +136,7 @@
 				D161E7762469BA0300FF5327 /* ReaderManagerBridge.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				D1F5D2A7246A291E000A115F /* alice.epub */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -349,6 +352,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				D1F5D2A8246A291E000A115F /* alice.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
